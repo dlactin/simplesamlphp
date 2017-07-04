@@ -10,7 +10,7 @@ Installs and configures a SimpleSAMLphp Service Provider.
 
 ### Chef
  
-  - Chef 12.4+
+  - Chef 12.5+
 
 ### Attributes 
 These attributes need to be populated: 
