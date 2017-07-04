@@ -6,7 +6,7 @@ module Simplesamlphp
 
     def simplesamlphp_updated?(path, version)
       return false unless simplesamlphp_installed?(path)
-      (File.open("#{path}/docs/simplesamlphp-changelog.txt").grep(/#{version}/).any?)
+      File.open("#{path}/docs/simplesamlphp-changelog.txt").grep(/#{version}/).any?
     end
   end
 end

@@ -15,14 +15,14 @@ default['simplesamlphp']['idp']['metadata']['url'] = 'https://idp.example.com'
 
 # Service provider attributes
 default['simplesamlphp']['sp']['enabled'] = true
-default['simplesamlphp']['sp']['entityid'] = "localhost/sp"
-default['simplesamlphp']['sp']['contact'] = "noreply@localhost.ca"
+default['simplesamlphp']['sp']['entityid'] = 'localhost/sp'
+default['simplesamlphp']['sp']['contact'] = 'noreply@localhost.ca'
 default['simplesamlphp']['sp']['salt'] = '2ff76d8b379141cdd3340dbd8e8bab1605e7a862d4a31657cc37265817463f48'
 
-default['simplesamlphp']['sp']['privatekey']['data_bag'] = "simplesamlphp"
+default['simplesamlphp']['sp']['privatekey']['data_bag'] = 'simplesamlphp'
 default['simplesamlphp']['sp']['privatekey']['path'] = "#{node['simplesamlphp']['installation']['path']}/cert/saml.pem"
 
-default['simplesamlphp']['sp']['certificate']['data_bag'] = "simplesamlphp"
+default['simplesamlphp']['sp']['certificate']['data_bag'] = 'simplesamlphp'
 default['simplesamlphp']['sp']['certificate']['path'] = "#{node['simplesamlphp']['installation']['path']}/cert/saml.crt"
 
 default['simplesamlphp']['sp']['attribute']['map']['custom'] = false
@@ -30,7 +30,7 @@ default['simplesamlphp']['sp']['attribute']['map']['custom'] = false
 default['simplesamlphp']['sp']['idp-metadata']['path'] = "#{node['simplesamlphp']['installation']['path']}/metadata/saml20-idp-remote.php"
 
 # Cookie config
-default['simplesamlphp']['cookie']['name']['auth'] = "SimpleSAMLAuthToken"
-default['simplesamlphp']['cookie']['name']['session'] = "SimpleSAMLSessionID"
-default['simplesamlphp']['cookie']['name']['php']['session'] = "SimpleSAMLPHPSessionID"
+default['simplesamlphp']['cookie']['name']['auth'] = 'SimpleSAMLAuthToken'
+default['simplesamlphp']['cookie']['name']['session'] = 'SimpleSAMLSessionID'
+default['simplesamlphp']['cookie']['name']['php']['session'] = 'SimpleSAMLPHPSessionID'
 default['simplesamlphp']['cookie']['lifetime']['session'] = 0
