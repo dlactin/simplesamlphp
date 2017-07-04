@@ -20,10 +20,9 @@ services: docker
 env:
   matrix:
   - INSTANCE=default-ubuntu-1404
-  - INSTANCE=default-ubuntu-1604
 
 before_script:
-  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
+  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER ; sudo gem install kitchen-docker )
   - eval "$(chef shell-init bash)"
   - chef --version
   - cookstyle --version
