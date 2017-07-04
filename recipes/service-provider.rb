@@ -51,7 +51,7 @@ elsif Chef::Config[:solo]
 else
   memcache_search = search(:node, "chef_environment:#{node.chef_environment} AND role:#{node['simplesamlphp']['memcached']['search']['role']}")
   memcache_search.each do |cache|
-  next if cache['ipaddress'].nil?
+    next if cache['ipaddress'].nil?
     @memcache_servers << cache['ipaddress']
   end
 end

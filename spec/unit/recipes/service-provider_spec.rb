@@ -61,8 +61,8 @@ describe 'simplesamlphp::service-provider' do
           'sp-secrets' => {
             'key' => 'qbqj2f3ZX%g2M3DEA4N!G2qfZEy!b#zeQu!*a#F%JU*h2PsKhRpkHKvAs4&s',
             'adminpw' => 'gG7vsBmcWcgnSpWrHJES2CBxXhfW55bdBWE$tWMEcu*!$tUx9jWFWUvE8zTs',
-          },
-        )
+          }
+                              )
         server.update_node(node)
       end
       runner.converge(described_recipe)
