@@ -1,5 +1,6 @@
 # simplesamlphp Cookbook
-
+[![Chef cookbook](https://img.shields.io/cookbook/v/chef-sugar.svg)](https://github.com/dlactin/simplesamlphp)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/dlactin/simplesamlphp)
 Installs and configures a SimpleSAMLphp Service Provider. 
 
 ## Requirements
