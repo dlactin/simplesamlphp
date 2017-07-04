@@ -19,7 +19,7 @@ env:
   - INSTANCE=default-ubuntu-1404
 
 before_script:
-  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER ; sudo gem install kitchen-docker )
+  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(chef shell-init bash)"
   - chef --version
   - cookstyle --version
