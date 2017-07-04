@@ -50,9 +50,9 @@ elsif Chef::Config[:solo]
   Chef::Log.warn('This recipe uses search. Chef Solo does not support search.')
 else
   memcache_search = search(:node, "chef_environment:#{node.chef_environment} AND role:#{node['simplesamlphp']['memcached']['search']['role']}")
- 	memcache_search.each do |cache|
-	  next if cache['ipaddress'].nil?
-   	@memcache_servers << cache['ipaddress']
+  memcache_search.each do |cache|
+  next if cache['ipaddress'].nil?
+    @memcache_servers << cache['ipaddress']
   end
 end
 
@@ -62,7 +62,7 @@ file node['simplesamlphp']['sp']['privatekey']['path'] do
   group 'www-data'
   mode  '0440'
 end
- 
+
 file node['simplesamlphp']['sp']['certificate']['path'] do
   content sp_data_bag['cert']
   owner 'root'
